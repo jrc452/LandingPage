@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAIRO REYES | Desarrollador</title>
+    <link rel="stylesheet" href="\LandingPage\style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-item active" data-tab="about">
+                <i data-lucide="user"></i> Sobre mí
+            </div>
+            <div class="sidebar-item" data-tab="projects">
+                <i data-lucide="code"></i> Proyectos
+            </div>
+            <div class="sidebar-item" data-tab="contact">
+                <i data-lucide="mail"></i> Contacto
+            </div>
+        </aside>
+
+
+        <div class="main-panel">
+            <header>
+                <h1><span class="symbol">&gt;</span> Jairo Reyes<span class="cursor">|</span></h1>
+                <p class="sub">Desarrollador</p>
+                <button id="themeToggle">🌙 Cambiar tema</button>
+            </header>
+
+            <div class="tabs" style="display: none;"></div> <!-- ya no se usa -->
+            <main>
+                <section id="about" class="tab-content active">
+                    <h2>// Sobre mí</h2>
+                    <p>Jairo Reyes es un desarrollador que esta apasionado por crear soluciones limpias, eficientes y
+                        escalables
+                        con Java y MySQL.</p>
+                </section>
+
+                <section id="projects" class="tab-content">
+                    <h2>// Proyectos</h2>
+                    <div class="card">
+                        <h3>Crazy Zoo</h3>
+                        <p>Aplicación de escritorio con JavaFX y MySQL</p>
+                        <img src="\LandingPage\images\crazyzoo.png" width="500px">
+                    </div>
+                </section>
+
+                <section id="contact" class="tab-content">
+                    <h2>// Contacto</h2>
+                    <p>📱 685 80 10 41<br>
+                        📧 jreycal452@g.educaand.es</p>
+                </section>
+            </main>
+
+            <footer>
+                <p>© Copyright MMXXV Jairo Reyes</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
