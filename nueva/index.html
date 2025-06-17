@@ -12,7 +12,7 @@
 <body class="dark-theme">
     <div class="layout">
         <aside class="sidebar">
-            <div class="sidebar-item active" data-tab="about">
+            <div class="sidebar-item" data-tab="about">
                 <i data-lucide="user"></i> Sobre mí
             </div>
             <div class="sidebar-item" data-tab="projects">
@@ -23,12 +23,10 @@
             </div>
         </aside>
 
-
         <div class="main-panel">
             <header>
                 <h1><span class="symbol">&gt;</span> Jairo Reyes<span class="cursor">|</span></h1>
                 <p class="sub">Desarrollador</p>
-                <button role="link" onclick="window.location='\\LandingPage\\nueva'">NUEVA VERSIÓN</button>
                 <button id="themeToggle">🌙 Cambiar tema</button>
             </header>
 
@@ -41,7 +39,7 @@
                         con Java y MySQL.</p>
                 </section>
 
-                <section id="projects" class="tab-content">
+                <section id="projects" class="tab-content active">
                     <h2>// Proyectos</h2>
                     <div class="card">
                         <h3>Crazy Zoo</h3>
@@ -50,8 +48,24 @@
                     </div>
                 </section>
 
-                <section id="contact" class="tab-content">
+                <section id="contact" class="tab-content active">
                     <h2>// Contacto</h2>
+                    <div class="form-container">
+                        <form id="contactForm">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                        </form>
+                        <div id="messageResponse"></div>
+                    </div>
                     <p>📱 685 80 10 41<br>
                         📧 jreycal452@g.educaand.es</p>
                 </section>
